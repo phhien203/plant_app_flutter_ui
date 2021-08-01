@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:plant_app_flutter_ui/constants.dart';
+import 'package:plant_app_flutter_ui/screens/details/details_screen.dart';
 
 class RecommendPlants extends StatelessWidget {
   const RecommendPlants({
@@ -17,35 +18,50 @@ class RecommendPlants extends StatelessWidget {
             country: "Russia",
             price: 440,
             image: "assets/images/image_1.png",
-            press: () {},
+            press: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => DetailsScreen()));
+            },
           ),
           RecommendPlantCard(
             title: "Arabaica",
             country: "Vietnam",
             price: 540,
             image: "assets/images/image_2.png",
-            press: () {},
+            press: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => DetailsScreen()));
+            },
           ),
           RecommendPlantCard(
             title: "Jest",
             country: "Brazil",
             price: 640,
             image: "assets/images/image_3.png",
-            press: () {},
+            press: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => DetailsScreen()));
+            },
           ),
           RecommendPlantCard(
             title: "Jasmine",
             country: "Japan",
             price: 740,
             image: "assets/images/image_1.png",
-            press: () {},
+            press: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => DetailsScreen()));
+            },
           ),
           RecommendPlantCard(
             title: "Alabama",
             country: "Russia",
             price: 840,
             image: "assets/images/image_2.png",
-            press: () {},
+            press: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => DetailsScreen()));
+            },
           ),
         ],
       ),
@@ -81,7 +97,7 @@ class RecommendPlantCard extends StatelessWidget {
         children: [
           Image.asset(image),
           GestureDetector(
-            onTap: () => press,
+            onTap: () => press(),
             child: Container(
               padding: EdgeInsets.all(kDefaultPadding / 2),
               decoration: BoxDecoration(
