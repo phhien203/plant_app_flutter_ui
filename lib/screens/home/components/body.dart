@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'header_with_searchbox.dart';
+import 'recommend_plants.dart';
 import 'title_with_more_button.dart';
 
 class Body extends StatelessWidget {
@@ -18,6 +19,7 @@ class Body extends StatelessWidget {
             title: "Recommended",
             press: () {},
           ),
+          RecommendPlants(),
         ],
       ),
     );
